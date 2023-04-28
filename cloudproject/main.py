@@ -613,7 +613,7 @@ def testmodel(airline,Source,Destination,Total_Stops,Depature_Date,Arrival_Date)
 
     # In[78]:
 
-    model = open('flight_rf3.pkl', 'rb')
+    model = open('cloudproject/flight_rf3.pkl', 'rb')
     forest = pickle.load(model)
     Journey_day = int(pd.to_datetime(Depature_Date, format="%Y-%m-%dT%H:%M").day)
     Journey_month = int(pd.to_datetime(Depature_Date, format="%Y-%m-%dT%H:%M").month)
